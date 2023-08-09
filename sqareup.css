@@ -1,0 +1,13 @@
+.header__logo {
+  margin-right: unset !important;
+  border: none !important;
+  background: none !important;
+  flex: 1 !important;
+}
+.header__navigation {
+  flex: 5 !important;
+  text-align: left !important;
+}
+.header__navigation ul {
+  text-align: left !important;
+}
