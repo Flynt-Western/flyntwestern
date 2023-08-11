@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flynt Western</title>
+    // load  vuejs script
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="../assets/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="../assets/squareup.css" rel="stylesheet" type="text/css">
+    <script src="../assets/squareup.js" type="text/javascript"></script>
+    <script src="https://mcfarlandproductions.github.io/flyntwestern/assets/bestsellers.js"></script>
+    <!--    <meta http-equiv="refresh" content="0; url=https://flyntwestern.com">-->
+    <!--    <meta name="robots" content="noindex">-->
+</head>
+<body>
+<div class="flex-container">
+    <div class="product-box">
+        <a href="https://www.flyntwestern.com/shop/leather/7">
+            <img alt="Product 1"
+                 class="product-image" src="https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rioleatherjacket_1691760255.jpg?width=800&optimize=medium">
+            <div class="product-info">
+                <div class="product-title">The Rio is one of our signature pieces.</div>
+                <div class="product-description">The design is unique to Flynt Western. The removable bib can be used as
+                    an extra layer of protection or give a finished look.
+                    The subtle distressing and unique stitching makes this a piece that you'll use for years.
+                </div>
+                <div class="product-price"><span class="arrow"></span> <span class="amount">$459</span>.00</div>
+            </div>
+        </a>
+    </div>
+    <div class="product-box">
+        <a href="https://www.flyntwestern.com/shop/leather/7">
+            <img alt="Product 2"
+                 class="product-image" src="https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rizzocognac_1691760334.jpg?width=800&optimize=medium">
+            <div class="product-info">
+                <div class="product-title">The Rizzo is casual refinement at its best.</div>
+                <div class="product-description">Quilted leather in a unique cognac color, this looks great with the
+                    Chisos leather vest as shown.
+                    Look great in this on or off the ranch.
+                </div>
+                <div class="product-price"><span class="arrow"></span> <span class="amount">$589</span>.00</div>
+            </div>
+        </a>
+    </div>
+    <div class="product-box">
+        <a href="https://www.flyntwestern.com/shop/leather/7">
+            <img alt="Product 3"
+                 class="product-image" src="https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/the-kramer_1691760252.jpg?width=800&optimize=medium">
+            <div class="product-info">
+                <div class="product-title">The Kramer is subtle sophistication.</div>
+                <div class="product-description">Longhorns fans love the color Mojave Rust. Made from Bellandi Italian
+                    Wool, this is a staple for the office or a night on the town.
+                </div>
+                <div class="product-price"><span class="arrow"></span> <span class="amount">$369</span>.00</div>
+            </div>
+        </a>
+    </div>
+</div>
+<script>
+
+    // add styles to head for #0bc95db1-37d2-11ee-a9cd-e579825cffc9 iframe to keep it hidden
+    document.getElementsByTagName('head')[0].appendChild(document.createElement('style')).textContent = `
+        #0bc95db1-37d2-11ee-a9cd-e579825cffc9 {display: none;}
+    `;
+
+    // add styles to head for #0bc95db1-37d2-11ee-a9cd-e579825cffc9 iframe to keep it hidden
+    document.getElementsByTagName('head')[0].appendChild(document.createElement('style')).textContent = `
+        #0bc95db1-37d2-11ee-a9cd-e579825cffc9 {
+            display: none;
+        }
+    `;
+    const isHomepage = window.location.pathname === '/' || window.location.href.indexOf('/home-revamp') > -1;
+    if (isHomepage) {document.body.classList.add('root-page');}
+    var hideStyles = document.createElement('style');
+    hideStyles.textContent = '[data-v-10dc15d9] .w-image-block .feature-card { opacity: 0; visibility: hidden; }';
+    document.head.appendChild(hideStyles);
+    const assets = ['squareup.css', 'squareup.js'];
+    const baseUrl = 'https://mcfarlandproductions.github.io/flyntwestern/assets/';
+
+    assets.forEach(asset => {
+        const element = asset.endsWith('.css') ? document.createElement('link') : document.createElement('script');
+
+        if (asset.endsWith('.css')) {
+            element.rel = 'stylesheet';
+            element.href = baseUrl + asset;
+            element.type = 'text/css'; // Set the type attribute for CSS
+            element.setAttribute('preload', 'true'); // Add preload attribute
+        } else if (asset.endsWith('.js')) {
+            if (document.body) {
+                element.src = baseUrl + asset;
+                document.body.appendChild(element);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    element.src = baseUrl + asset;
+                    document.body.appendChild(element);
+                });
+            }
+        }
+
+        if (asset.endsWith('.css')) {
+            document.head.appendChild(element);
+        }
+    });
+</script>
+</body>
+</html>

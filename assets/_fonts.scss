@@ -1,0 +1,9 @@
+// $font-family: "Antiquarian Scribe";
+// url: https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/AntiquarianScribe_1690215507.ttf
+
+$font-family: "Antiquarian Scribe";
+$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+:root {
+  --maker-font-heading-font-family: "#{$font-family}" !important;
+}

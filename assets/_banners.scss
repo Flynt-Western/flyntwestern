@@ -1,0 +1,42 @@
+// Hero Banners
+[data-v-10dc15d9] {
+  .w-image-block {
+    // --bg-position: 50% 50% !important;
+    .container .offset-sm-3 {
+      margin-left: unset !important; // remove left marign
+      margin: 0 auto !important; // auto center
+      max-width: unset !important;
+    }
+
+    .feature-card {
+      opacity: unset;
+      visibility: visible;
+      // --bg-img-overlay: 100% !important;
+
+      //min-width: 800px !important;
+      padding: 20px;
+      h1 {
+        color: var(--primary-contrast-color) !important;
+        font-size: var(--fs-7);
+      }
+      // background: rgba(0,0,0,0.51) !important;
+      &::before {
+        background: rgba(0,0,0,0.20) !important;
+      }
+    }
+  }
+}
+
+// Homepage Styles
+.root-page {
+  [data-v-10dc15d9] .col-sm-6 {
+    flex: unset;
+  }
+  @media screen and (max-width: 600px) {
+    [data-v-10dc15d9] .w-image-block .feature-card h1 {
+      color: var(--primary-contrast-color) !important;
+      font-size: var(--fs-4);
+      white-space: nowrap;
+    }
+  }
+}
