@@ -5,7 +5,7 @@ hideStyles.textContent = '[data-v-10dc15d9] .w-image-block .feature-card { opaci
 document.head.appendChild(hideStyles);
 
 const assets = ["squareup.css", "squareup.js"];
-const baseUrl = "https://mcfarlandproductions.github.io/flyntwestern/assets/";
+const baseUrl = "https://flynt-western.github.io/flyntwestern/assets/";
 
 assets.forEach(asset => {
     const element = asset.endsWith('.css') ? document.createElement('link') : document.createElement('script');
