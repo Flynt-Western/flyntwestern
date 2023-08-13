@@ -13,7 +13,7 @@
 .product-box {
   display: grid;
   grid-gap: 20px;
-  width: 350px;
+  width: 33%;
 }
 @media screen and (max-width: 768px) {
   .product-box {
@@ -181,4 +181,5 @@
   --gutter-row-md: 16px;
   --gutter-row-lg: 16px;
   --gutter-row-xl: 16px;
+  --max-container: 1040px;
 }
