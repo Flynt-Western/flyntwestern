@@ -23,7 +23,7 @@ function loadApp() {
             products: [{
                 id: 1,
                 title: 'The Rio is one of our signature pieces.',
-                description: 'The design is unique to Flynt Western. The removable bib can be used as an extra layer of protection or give a finished look. The subtle distressing and unique stitching makes this a piece that you\'ll use for years.',
+                description: 'The design is unique to Flynt Western. The removable liner can be used as an extra layer of protection or give a finished look. The subtle distressing and unique stitching makes this a piece that you\'ll use for years.',
                 price: 459,
                 image: 'https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rioleatherjacket_1691760255.jpg?width=800&optimize=medium',
                 url: 'https://www.flyntwestern.com/product/hybridleathercoat/241'
@@ -37,7 +37,7 @@ function loadApp() {
             }, {
                 id: 3,
                 title: 'The Kramer is subtle sophistication.',
-                description: 'Longhorns fans love the color Mojave Rust. Made from Bellandi Italian Wool, this is a staple for the office or a night on the town.',
+                description: 'Longhorns fans love the color of this jacket; Mojave Rust. Made from Bellandi Italian Wool, this is a staple for the office or a night on the town.',
                 price: 369,
                 image: 'https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/the-kramer_1691760252.jpg?width=800&optimize=medium',
                 url: 'https://www.flyntwestern.com/product/22009WoolHybridCoat/255'
