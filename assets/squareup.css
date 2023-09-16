@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "Agenda-Medium";
+  src: url("https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/agenda-14_1690215775.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
+  --product-font-family: "Agenda-Medium", sans-serif;
   --maker-font-heading-font-family: "Antiquarian Scribe" !important;
 }
 
@@ -17,7 +24,7 @@
 .product-box {
   display: grid;
   grid-gap: 20px;
-  width: 350px;
+  width: 33%;
 }
 @media screen and (max-width: 768px) {
   .product-box {
@@ -44,6 +51,8 @@
 .product-box .product-info .product-title,
 .product-box .product-info .product-description {
   text-align: left;
+  font-family: var(--product-font-family);
+  font-weight: 400;
 }
 .product-box .product-info .product-title {
   font-weight: bold;
@@ -80,9 +89,13 @@
   transition: all 0.2s;
 }
 .product-box .product-info .product-price .arrow::before {
-  content: "←";
-  color: #333;
-  font-size: 25px;
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 5px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ny43OSAzLjQzIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBzdHJva2Utd2lkdGg6IDBweDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj4KICAgIDxnPgogICAgICA8Zz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0yLjA3LDEuNjJjLS4wNi0uMDgtLjE5LS4xOC0uNDItLjI0aC4xOGMuMDkuMDYuMTcuMTQuMjQuMjRaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMi4xNCwyLjA1aC0uNDljLjIzLS4wNi4zNi0uMTYuNDItLjIzLjAyLS4wMy4wNC0uMDYuMDYtLjA5aC4wMXMwLDAsMCwwYy4wMi4wNS4wNC4xOCwwLC4zMloiLz4KICAgICAgPC9nPgogICAgICA8Zz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0yLjE0LDIuMDVoLS4yOWMuMDgtLjA2LjE2LS4xMy4yMi0uMjMuMDItLjAzLjA0LS4wNi4wNi0uMDloLjAxczAsMCwwLDBjLjAyLjA1LjA0LjE4LDAsLjMyWiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0ibTEuODUsMi4wNWguMjljLS4wMi4xNC0uMDguMjgtLjI0LjM4LS4zNy4yMy0uOC41Ny0uODksMSwwLDAtLjU2LS4zOS0uMi0uODEuMjYtLjMyLjctLjMzLDEuMDQtLjU3WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0ibTQ3Ljc5LDEuNzJjMCwuMTgtLjE1LjMzLS4zNC4zM0gyLjE0Yy4wNC0uMTQuMDItLjI3LDAtLjMyaDBzMC0uMDEtLjAxLS4wMWgwcy0uMDQuMDctLjA2LjFjLS4wNi4wNy0uMTkuMTctLjQyLjIzLS4wNi4wMi0uMTIuMDMtLjE5LjA0LS42OC4xLTEuMTYtLjM3LTEuNDYtLjM3LjMxLDAsLjc4LS40NywxLjQ2LS4zOC4wNy4wMS4xMy4wMi4xOS4wNC4yMy4wNi4zNi4xNi40Mi4yNC0uMDctLjEtLjE1LS4xOC0uMjQtLjI0LS4zMy0uMjMtLjc2LS4yNS0xLjAyLS41Ni0uMzYtLjQzLjItLjgyLjItLjgyLjA5LjQzLjUyLjc4Ljg5LDEuMDEuMTYuMS4yMi4yNC4yNC4zN2g0NS4zMWMuMTksMCwuMzQuMTUuMzQuMzRaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMi4xNCwxLjcyaDBzMCwwLS4wMS4wMWguMDFaIi8+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPg==) no-repeat center;
+  background-size: contain;
+  color: var(--primary-bright-dark);
 }
 .product-box .product-info .product-price:hover {
   transform: translateX(-10px);

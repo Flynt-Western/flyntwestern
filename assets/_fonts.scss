@@ -1,9 +1,17 @@
 // $font-family: "Antiquarian Scribe";
 // url: https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/AntiquarianScribe_1690215507.ttf
+@font-face {
+  font-family: 'Agenda-Medium';
+  src: url('https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/agenda-14_1690215775.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $font-family: "Antiquarian Scribe";
 $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$product-font-family: "Agenda-Medium";
 
 :root {
+  --product-font-family: "#{$product-font-family}", sans-serif;
   --maker-font-heading-font-family: "#{$font-family}" !important;
 }

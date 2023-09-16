@@ -43,6 +43,8 @@
     .product-title,
     .product-description {
       text-align: left;
+      font-family: var(--product-font-family);
+      font-weight: 400;
     }
 
     .product-title {
@@ -86,9 +88,13 @@
         transition: all 0.2s;
 
         &::before {
-          content: "\2190";
-          color: #333;
-          font-size: 25px;
+          content: "";
+          display: inline-block;
+          width: 65px;
+          height: 5px;
+          background: url(#{$left-arrow}) no-repeat center;
+          background-size: contain;
+          color: var(--primary-bright-dark);
         }
       }
 
