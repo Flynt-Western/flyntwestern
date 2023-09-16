@@ -23,14 +23,14 @@ function loadApp() {
             products: [{
                 id: 1,
                 title: 'The Rio is one of our signature pieces.',
-                description: 'The design is unique to Flynt Western. The removable bib can be used as an extra layer of protection or give a finished look.\n\n The subtle distressing and unique stitching makes this a piece that you\'ll use for years.',
+                description: 'The design is unique to Flynt Western. The removable bib can be used as an extra layer of protection or give a finished look.<br /><br /> The subtle distressing and unique stitching makes this a piece that you\'ll use for years.',
                 price: 459,
                 image: 'https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rioleatherjacket_1691760255.jpg?width=800&optimize=medium',
                 url: 'https://www.flyntwestern.com/product/hybridleathercoat/241'
             }, {
                 id: 2,
                 title: 'The Rizzo is casual refinement at its best.',
-                description: 'Quilted leather in a unique cognac color, this looks great with the Chisos leather vest as shown.\n\n Look great in this on or off the ranch.',
+                description: 'Quilted leather in a unique cognac color, this looks great with the Chisos leather vest as shown.<br /><br /> Look great in this on or off the ranch.',
                 price: 589,
                 image: 'https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rizzocognac_1691760334.jpg?width=800&optimize=medium',
                 url: 'https://www.flyntwestern.com/product/22012QuiltedLeatherCoat/226'
@@ -53,7 +53,7 @@ function loadApp() {
                 <img :alt="product.title" class="product-image" :src="product.image">
                 <div class="product-info">
                   <div class="product-title">{{ product.title }}</div>
-                  <div class="product-description">{{ product.description }}</div>
+                  <div class="product-description" v-html="product.description"></div>
                   <div class="product-price"><span class="arrow"></span> <span class="amount">\$
                     {{ product.price }}</span>.00
                   </div>
