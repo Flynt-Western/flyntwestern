@@ -25,7 +25,7 @@ function loadApp() {
                 title: 'The Rio is one of our signature pieces.',
                 description: 'The design is unique to Flynt Western. The removable bib can be used as an extra layer of protection or give a finished look.<br /><br /> The subtle distressing and unique stitching makes this a piece that you\'ll use for years.',
                 price: 459,
-                image: 'https://www.flyntwestern.com/uploads/b/0a2c20758c5097a5879c3516f8de22cd9936c5ffa196835ac8493c3933351dd4/rioleatherjacket_1691760255.jpg?width=800&optimize=medium',
+                image: 'https://135247917.cdn6.editmysite.com/uploads/1/3/5/2/135247917/s500310733390105201_p241_i6_w1165.png?width=2400&optimize=large',
                 url: 'https://www.flyntwestern.com/product/hybridleathercoat/241'
             }, {
                 id: 2,
@@ -39,7 +39,7 @@ function loadApp() {
                 title: 'The Bateman is subtle sophistication.',
                 description: 'Longhorns fans love the color of this jacket; Mojave Rust. Made from Bellandi Italian Wool, this is a staple for the office or a night on the town.',
                 price: 369,
-                image: 'https://135247917.cdn6.editmysite.com/uploads/1/3/5/2/135247917/s500310733390105201_p252_i14_w528.png?width=2400&optimize=largo',
+                image: 'https://135247917.cdn6.editmysite.com/uploads/1/3/5/2/135247917/s500310733390105201_p252_i14_w528.png?width=2400&optimize=large',
                 url: 'https://www.flyntwestern.com/product/ItalianWoolSportCoat/252'
             }],
             appElementExists: false, // Flag to track if the element exists
